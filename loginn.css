@@ -11,14 +11,18 @@ body {
 
 .login {
     width: 300px;
+    height: 350px;
     padding: 20px;
     background-color: rgb(247, 246, 243); /* Làm mờ nền để dễ đọc hơn */
     border-radius: 25px;
+    margin-top: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     text-align: center;
 }
 
 .login h2 {
     color: rgb(18, 15, 16);
+    font-family: sans-serif;
     margin-bottom: 20px;
 }
 
@@ -32,8 +36,10 @@ body {
     left: 10px;
     margin-right: 10px;
     top: 50%; 
+    /* canh giữa biểu tượng theo chiều ngang */
     transform: translateY(-50%); /* Canh giữa biểu tượng theo chiều dọc */
     color: #aaa;
+    
 }
 
 .input-container input {
@@ -43,18 +49,21 @@ body {
     border: 1px solid #ccc;
     outline: none;
     transition: border 0.3s;
+    cursor:pointer;
 }
 
 .input-container input:focus {
     border: 1px solid #2E8B57; /* Thay đổi màu viền khi được chọn */
+    cursor: pointer;
 }
 
 .input-container .fa-eye {
     position: absolute; /* Định vị biểu tượng mắt cho trường mật khẩu */
-    right: 10px; /* Canh biểu tượng sang bên phải */
+    right: 1px; /* Canh biểu tượng sang bên phải */
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    /* nhap mk */
 }
 
 .login button {
@@ -66,8 +75,8 @@ body {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s, font-size 0.3s;
+    /* margin-top: 10px; */
+    /* transition: background-color 0.3s, font-size 0.3s; */
 }
 
 .login button:hover {
@@ -75,24 +84,44 @@ body {
     font-size: 17px;
 }
 
-.alternative-login {
-    margin-top: 20px;
+.tag{
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid white  ; */
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: auto;
 }
 
-.tag {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.container {
+.container{
     display: flex;  
-    justify-content: center;
+    align-items: center;
 }
-
-.img-facebook, .img-google {
+.img-facebook{
+    display: block;
     width: 45px;
     height: 45px;
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto; */
+    /* border: 1px solid rgb(228, 225, 225);  */
+    border-color: aliceblue;
     border-radius: 15px;
+    /* position: fixed; */
+    /* bottom: auto; */
     cursor: pointer;
-    margin: 0 10px;
+    margin-left: 25px;
+}
+
+.img-google{
+    display: inline;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-left: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
 }
