@@ -1,37 +1,76 @@
-.login{
+body {
+    font-family: Arial, sans-serif;
+    background: url('./background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login {
     width: 300px;
-    height: 300px ;
-    border: 1px solid grey;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Làm mờ nền để dễ đọc hơn */
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 150 auto; 
 }
 
-h2{
-    color: rgb(255, 0, 140);
+.login h2 {
+    color: rgb(18, 15, 16);
     font-family: sans-serif;
+    margin-bottom: 20px;
 }
 
-.login input{
-    width: 200px;
-    height: 40px;
-    margin-bottom: 10px;
+.input-container {
+    position: relative; /* Để định vị các biểu tượng trong trường nhập */
+    margin-bottom: 15px;
+}
+
+.input-container i {
+    position: absolute; /* Định vị tuyệt đối trong hộp chứa tương đối */
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Canh giữa biểu tượng theo chiều dọc */
+    color: #aaa;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* Thêm khoảng cách bên trái để có chỗ cho biểu tượng */
     border-radius: 20px;
-    border: 1px solid black;
-    padding-left: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border 0.3s;
 }
 
-.login button{
-    width: 180px;
-    height: 40px;
-    margin-bottom: 10px;
+.input-container input:focus {
+    border: 1px solid #2E8B57; /* Thay đổi màu viền khi được chọn */
+}
+
+.input-container .fa-eye {
+    position: absolute; /* Định vị biểu tượng mắt cho trường mật khẩu */
+    right: 10px; /* Canh biểu tượng sang bên phải */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.login button {
+    width: 100%;
+    padding: 10px;
     border-radius: 20px;
     border: none;
-    background-color: rgb(238, 137, 130);
+    background-color: #2E8B57;
     color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, font-size 0.3s;
 }
 
-.login button:hover{
-    font-size: 15px;
+.login button:hover {
+    background-color: #246d49;
+    font-size: 17px;
 }
-

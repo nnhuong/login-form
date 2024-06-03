@@ -1,38 +1,35 @@
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css"
-    href="login.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div class="Login">
-        <h2>Member Login </h2>
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-        <!-- <button href ="https://www.facebook.com/nguyenminhsang091997">Login</button>
-         -->
-        <!-- <button type="button" onclick="dieu_huong()" target="_blank">Login</button>
+    <div class="login">
+        
+        <h2>Đăng nhập</h2>
+        <div class="input-container">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Nhập số điện thoại hoặc email">
+        </div>
+        <div class="input-container">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Nhập mật khẩu">
+            <i class="fas fa-eye"></i>
+        </div>
+        <button onclick="openNewTab()">Đăng nhập</button>
 
-         <script>
-             function dieu_huong(){
-                 location.assign("https://www.facebook.com/nguyenminhsang091997");
-             }
-         </script>  -->
-         <!-- <button target="_blank" onclick="tab.open('https://sata.code.pro.vn/', '_blank', 'toolbar=0,location=0,menubar=0');">Login</button> -->
-         <!-- <button onclick="tab.open('https://sata.code.pro.vn/', '_blank', 'toolbar=0,location=0,menubar=0');">Sata</button> -->
-         <button onclick="openNewTab()">Login</button>
+        <script>
+            function openNewTab() {
+                // Mở một tab mới khi click vào button
+                window.open('https://www.facebook.com/nguyenminhsang091997', '_blank');
+            }
+        </script> 
 
-         <script>
-             function openNewTab() {
-                 // Mở một tab mới khi click vào button
-                 window.open('https://www.facebook.com/nguyenminhsang091997', '_blank');
-             }
-         </script> 
-         <!-- <img src="https://pos.nvncdn.com/b12607-77662/art/artCT/20221102_bAcfSDRzwa2kea8Q4DHoEjID.jpg"> -->
     </div>
-    
-    
 </body>
 </html>
